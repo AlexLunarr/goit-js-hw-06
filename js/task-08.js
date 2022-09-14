@@ -20,7 +20,7 @@
 // Выведи обьект с введенными данными в консоль и очисти значения полей формы методом reset.
 
 const formEl = document.querySelector(".login-form");
-console.log(formEl);
+// console.log(formEl);
 formEl.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {

@@ -24,7 +24,7 @@ const images = [
 
 // РЕШЕНИЕ 1
 const listImages = document.querySelector(".gallery");
-console.log(listImages)
+// console.log(listImages)
 
 const listGallery = item => {
   return `<li>
@@ -33,7 +33,7 @@ const listGallery = item => {
 };
 
 const markup = images.map(listGallery).join('');
-console.log(markup)
+// console.log(markup)
 listImages.insertAdjacentHTML('beforeend', markup);
 
 

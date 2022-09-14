@@ -17,11 +17,11 @@
 
 const categories = document.querySelector('#categories');
 const categoriesEl = categories.querySelectorAll('.item');
-console.log(`Number of list: ${categoriesEl.length}`);
+// console.log(`Number of list: ${categoriesEl.length}`);
 categoriesEl.forEach(function (number, index) {
 	const categoryEl = categoriesEl[index].children;
-	console.log(categoryEl)
-	console.log(categoryEl[0].textContent)
-	console.log(categoryEl[1].querySelectorAll('li').length)
+	// console.log(categoryEl)
+	console.log(`Category: ${categoryEl[0].textContent}`)
+	console.log(`Elements: ${categoryEl[1].querySelectorAll('li').length}`)
 });
 
