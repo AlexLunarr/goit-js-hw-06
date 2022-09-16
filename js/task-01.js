@@ -17,11 +17,9 @@
 
 const categories = document.querySelector('#categories');
 const categoriesEl = categories.querySelectorAll('.item');
-// console.log(`Number of list: ${categoriesEl.length}`);
-categoriesEl.forEach(function (number, index) {
-	const categoryEl = categoriesEl[index].children;
-	// console.log(categoryEl)
-	console.log(`Category: ${categoryEl[0].textContent}`)
-	console.log(`Elements: ${categoryEl[1].querySelectorAll('li').length}`)
-});
+
+	categoriesEl.forEach(elem => {
+		console.log('Category:', elem.firstElementChild.textContent); console.log('Elements:', elem.lastElementChild.children.length);
+	});
+
 
