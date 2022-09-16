@@ -8,10 +8,10 @@
 const inputEl = document.querySelector("#font-size-control");
 
 const spanEl = document.querySelector("#text");
+spanEl.style.fontSize = inputEl.value + 'px';
 
 inputEl.addEventListener("input", setOutput);
 
-function setOutput() {
-	const inputElValue = inputEl.value;
-	spanEl.style.fontSize = `${inputElValue}px`;
-}
+function setOutput(evt) {
+	spanEl.style.fontSize = evt.currentTarget.value + 'px';
+};
