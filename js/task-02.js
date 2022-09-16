@@ -21,9 +21,11 @@ const ingredients = [
 ];
 
 const list = document.querySelector("#ingredients");
+const elementsLi = [];
 ingredients.forEach((ingredient) => {
   const item = document.createElement("li");
   item.textContent = ingredient;
   item.className = "item";
-  list.append(item);
-})
+  elementsLi.push(item);
+});
+list.append(...elementsLi);
